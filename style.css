@@ -5,6 +5,49 @@
 }
 
 
+header {
+  display:grid;
+  grid-template-columns: auto 1fr auto auto;
+  grid-template-areas: "logo . nav inscription";
+
+}
+
+.logo {
+  width: 100px;
+  grid-area:logo;
+}
+
+ul {
+  list-style-type:none;
+}
+
+li {
+  float: right; 
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.menu{
+  grid-area:nav;
+}
+
+.hebergements {
+  padding: 60px; 
+}
+
+.activités {
+  padding-right: 60px;
+}
+
+.inscription {
+  grid-area:inscription;
+  color: blue;
+  font-weight: bold;
+}
+
 i {
   padding: 15px 12px 15px 18px;
   background-color: #E9E9E9;
@@ -13,8 +56,6 @@ i {
   border-radius: 15px 0 0 15px;
   font-size: 20px; 
 }
-
-
 
 input[type=search] {
   width: 240px;
@@ -34,4 +75,11 @@ input[type=search] {
 
 .recherche {
   display: inline-flex;
+}
+
+.contener {
+    margin: 6vh;
+    font-family: "Raleway", sans-serif;
+    
+
 }
