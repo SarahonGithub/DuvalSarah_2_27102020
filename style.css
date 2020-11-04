@@ -4,17 +4,26 @@
   padding: 0;
 }
 
+html {
+  font-size: 100%;
+}
+
+.contener {
+    margin: 6vh;
+    font-family: "Raleway", sans-serif;
+    font-size: 1.1em;
+}
 
 header {
   display:grid;
   grid-template-columns: auto 1fr auto auto;
   grid-template-areas: "logo . nav inscription";
-
 }
 
 .logo {
   width: 100px;
   grid-area:logo;
+  padding-bottom:40px;
 }
 
 ul {
@@ -35,11 +44,11 @@ a {
 }
 
 .hebergements {
-  padding: 60px; 
+  padding: 70px; 
 }
 
 .activités {
-  padding-right: 60px;
+  padding-right: 70px;
 }
 
 .inscription {
@@ -47,8 +56,7 @@ a {
   color: blue;
   font-weight: bold;
 }
-
-i {
+#icon {
   padding: 15px 12px 15px 18px;
   background-color: #E9E9E9;
   width: 22px;
@@ -57,13 +65,23 @@ i {
   font-size: 20px; 
 }
 
-input[type=search] {
-  width: 240px;
-  height: 50px;
-  border-color:  #E9E9E9;
+.search_box{
+    border-right: none;
+    border-left: none;
+    border-top: 1px solid #E9E9E9;
+    border-bottom: 1px solid #E9E9E9;
+    width: 250px;
+    padding-left: 20px;
+    font-weight: bold;
+    color: black;
+    font-size: 1em;
 }
 
-.bouton { 
+input::placeholder {
+  color: black;
+}
+
+.button{ 
   background: #0067FF;
   height: 50px;
   width: 130px;
@@ -73,13 +91,43 @@ input[type=search] {
   font-size: 18px;
 }
 
-.recherche {
+.search{
   display: inline-flex;
 }
 
-.contener {
-    margin: 6vh;
-    font-family: "Raleway", sans-serif;
-    
+h1 {
+  font-size: 1.4em;
+  padding-bottom: 0.2em;
+}
 
+h2 {
+  font-weight: normal;
+  font-size: 1.1em;
+  padding-bottom: 1em;
+}
+
+.search_filters{
+  display:grid;
+  grid-template-columns: auto auto auto auto auto 1fr;
+  grid-template-areas: "title économique familial romantique animaux .";
+}
+
+.filter_title {
+  grid-area:title;
+}
+
+.filter_économique {
+  grid-area:économique;
+}
+
+.filter_familial {
+  grid-area:familial;
+}
+
+.filter_romantique {
+  grid-area:romantique;
+}
+
+.filter_animaux {
+  grid-area:animaux;
 }
