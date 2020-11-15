@@ -6,15 +6,18 @@
 
 html {
   font-size: 100%;
+  
 }
 
-.contener {
-    margin:10vh;
+body{
+  max-width:1200px;
+    margin: auto;
     font-family: "Raleway", sans-serif;
     font-size: 1.1em;
+    padding:4rem 10vh;
 }
 
-header {
+.header1 {
   display:grid;
   grid-template-columns: auto 1fr auto auto;
   grid-template-areas: "logo . nav inscription";
@@ -54,11 +57,18 @@ a {
   padding-left:35px;
 }
 
+.activités:hover {
+  padding-top: 35px; 
+  color: #0067FF;
+  border-top: 3px solid #0067FF;
+}
+
 .inscription {
   grid-area:inscription;
   color: #0067FF;
   font-weight: bold;
 }
+
 #icon {
   padding: 15px 12px 17px 18px;
   background-color: #E9E9E9;
@@ -103,7 +113,7 @@ h1 {
   padding-bottom: 0.2em;
 }
 
-h2 {
+.sous_h1{
   font-weight: normal;
   font-size: 1.1em;
   padding-bottom: 1em;
@@ -174,4 +184,81 @@ h2 {
   justify-content: center;
   border: 1px solid  #DEDEDE;
   margin-right: 1rem;
+}
+
+
+
+
+.all_hostings{
+  display: grid;
+  column-gap: 2.2em;
+  grid-template-columns: 2fr 1fr;
+  
+
+}
+
+.hosting{
+  display: grid;
+  grid-template-columns: 3, 1fr;
+  border-radius: 1em;
+  column-gap: 2rem;
+  row-gap: 2rem;
+  background-color: #F2F2F2;
+  margin: 2rem 0;
+  padding:2.5em;
+}
+
+.hosting_title {
+  grid-column: 1/ span 3;
+}
+
+.hosting_card{
+  border-radius: 1.25rem;
+  box-shadow: 0 0px 15px #CECECE;
+  padding: 0.3rem;
+  background-color: white;
+}
+
+.hosting_card_img{
+  height:150px;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.hosting_name{
+  margin:0.7rem;
+}
+
+.hosting_night_price{
+  margin: 0 .7rem;
+}
+
+.hosting_card_stars{
+  margin: .5rem;
+}
+
+.hosting_card_stars{
+  font-size:0.7rem;
+}
+
+.hosting_show_more{
+  font-weight: bold;
+}
+
+
+
+
+
+.popular_hosting{
+  display: grid;
+  row-gap: 2.5rem;
+  background-color: #F2F2F2;
+  padding: 2rem;
+  grid-template-columns: 1fr;
+  margin: 2rem 0;
+}
+
+.popular_hosting_card_img{
+  object-fit: cover;
+  width: 100px;
+  border-radius: 1rem 0 0 1rem;
 }
