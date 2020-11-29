@@ -53,8 +53,8 @@ a {
 
 .hebergements {
   padding: 35px; 
-  color: #0067FF;
-  border-top: 3px solid #0067FF;
+  color: #0065FC;
+  border-top: 3px solid #0065FC;
 }
 
 .activités {
@@ -64,23 +64,23 @@ a {
 
 .activités:hover {
   padding-top: 35px; 
-  color: #0067FF;
-  border-top: 3px solid #0067FF;
+  color: #0065FC;
+  border-top: 3px solid #0065FC;
 }
 
 .inscription {
   grid-area:inscription;
-  color: #0067FF;
+  color: #0065FC;
   font-weight: bold;
 }
 
 #icon {
   padding: 15px 12px 17px 18px;
-  background-color: #E9E9E9;
-  width: 22px;
-  height: 20px;
+  background-color:  #F2F2F2;
+  width:12px;
+  height:10px;
   border-radius: 15px 0 0 15px;
-  font-size: 20px; 
+  font-size:16px; 
 }
 
 .search_box{
@@ -88,7 +88,7 @@ a {
     border-left: none;
     border-top: 1px solid #E9E9E9;
     border-bottom: 1px solid #E9E9E9;
-    width: 250px;
+    width: 190px;
     padding-left: 20px;
     font-weight: bold;
     color: black;
@@ -100,13 +100,13 @@ input::placeholder {
 }
 
 .button{ 
-  background: #0067FF;
-  height: 53px;
-  width: 135px;
+  background: #0065FC;
+  height: 43px;
+  width: 110px;
   border-radius: 0 15px 15px 0; 
   color: white;
   border: none;
-  font-size: 18px;
+  font-size:14px;
 }
 
 .search{
@@ -127,10 +127,10 @@ h1 {
 .filter_category {
   display:inline-flex;
   align-items: center;
-  border: 3px solid #DEDEDE;
+  border: 2px solid #DEDEDE;
   border-radius: 30px;
-  margin-right:30px;
-  height:40px;
+  margin-right:15px;
+  height:37px;
   cursor: pointer;
 }
 
@@ -140,22 +140,22 @@ h1 {
 }
 
 .filter_icon{
-  background-color: #D4E5FE;
+  background-color: #DEEBFF;
   display: flex;
   border-radius: 100%;
-  height: 45px;
-  width: 45px;
+  height:40px;
+  width:40px;
   align-items: center;
   justify-content: center;
   font-size: 1.2em;
-  color:  #0067FF;
+  color:  #0065FC; 
   margin-left:-5px;
 }
 
 .filter_title {
-  margin-right: 20px;
+  margin-right: 15px;
   margin-left:10px;
-  font-size:15px;
+  font-size:13px;
   font-weight:bold;
 }
 
@@ -164,14 +164,25 @@ h1 {
   display:flex;
   align-items:center;
   margin-right:33px;
-  font-size:1rem;
+  font-size:13px;
 }
 
 .filter_category:hover{
   color:white;
-  border: 2px solid  #0067FF;
-  background-color: #0067FF;
+  border: 2px solid  #0065FC;
+  background-color: #0065FC;
 }
+
+.blue {
+  color: #0065FC;
+}
+
+.grey {
+  color: #DEDEDE;
+}
+
+
+
 
 .result_info{
   display: flex; 
@@ -181,7 +192,7 @@ h1 {
 }
 
 .info_icon{
-  color: #0067FF;
+  color: #0065FC;
   min-height: 2rem;
   min-width: 2rem;
   border-radius: 100%;
@@ -191,8 +202,6 @@ h1 {
   border: 1px solid  #DEDEDE;
   margin-right: 1rem;
 }
-
-
 
 
 .all_hostings{
@@ -206,8 +215,8 @@ h1 {
   display: grid;
   grid-template-columns: 3, 1fr;
   border-radius: 1em;
-  column-gap: 2rem;
-  row-gap: 2rem;
+  column-gap: 1.5rem;
+  row-gap: 1.5rem;
   background-color: #F2F2F2;
   margin: 2rem 0;
   padding:2.5em;
@@ -222,9 +231,13 @@ h1 {
   box-shadow: 0 0px 15px #CECECE;
   padding: 0.3rem;
   background-color: white;
-  font-size: 0.8em; 
+  font-size: 0.7rem;
+  width: 200px;
 }
   
+.hosting_card:hover {
+  background-color: #DEEBFF;
+}
 
 .hosting_card_img{
   border-radius: 1rem 1rem 0 0;
@@ -248,7 +261,7 @@ h1 {
 }
 
 .hosting_card_stars{
-  font-size:0.7rem;
+  font-size:0.6rem;
 }
 
 .hosting_show_more{
@@ -261,12 +274,17 @@ h1 {
 
 .popular_hosting{
   display: grid;
-  row-gap: 2.5rem;
+  row-gap: 1.5rem;
   background-color: #F2F2F2;
   padding: 2rem;
   grid-template-columns: 1fr;
   margin: 2rem 0;
   border-radius: 1em;
+}
+
+.popular_hosting_title {
+  display: flex;
+  justify-content: space-between;
 }
 
 .popular_hosting_card {
@@ -275,7 +293,12 @@ h1 {
   box-shadow: 0 0px 15px #CECECE;
   padding: 0.3rem;
   background-color: white;
-  font-size: 0.8em;
+  font-size: 0.7rem;
+}
+
+.popular_hosting_card:hover {
+  background-color: #DEEBFF;
+  
 }
 
 .popular_hosting_card_img{
@@ -286,8 +309,25 @@ h1 {
 }
 
 .description {
-  margin-left:0.7em;
+  margin-left:0.6em;
+  display: flex;
+  flex-wrap: wrap;
 }
+
+.popular_hosting_name {
+  margin-left: 0.7rem;
+  margin-top: 0.6rem;
+}
+
+.description .hosting_card_stars{
+  align-self: flex-end;
+  margin-bottom:7px;
+}
+
+.description .hosting_night_price {
+  margin-bottom:25px;
+}
+
 
 
 
@@ -300,36 +340,70 @@ h1 {
 }
 
 .all_activities {
-  display:flex;
-  flex-wrap: wrap;
-  max-width:1129px;
-  justify-content: space-between;
-  
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: 160px 30px 40px 130px;
+  column-gap:2rem;
+  grid-template-areas:"Vieux-Port Fort-de-Promègues Parc-National-des-Calanques Notre-Dame-de-la-Garde"
+                      "Vieux-Port Fort-de-Promègues Parc-National-des-Calanques ."
+                      "Vieux-Port . Parc-National-des-Calanques Parc-Longchamp"
+                      "Vieux-Port Îles-du-Frioul Parc-National-des-Calanques Parc-Longchamp";
+}
+
+#activity_card1 {
+  grid-area: Vieux-Port;
+}
+
+#activity_card2 {
+  grid-area: Fort-de-Promègues;
+}
+
+#activity_card3 {
+  grid-area: Parc-National-des-Calanques;
+}
+
+#activity_card4 {
+  grid-area:Notre-Dame-de-la-Garde;
+}
+
+#activity_card5 {
+  grid-area:Îles-du-Frioul;
+}
+
+#activity_card6 {
+  grid-area:Parc-Longchamp;
 }
 
 .activity_card{
-  box-shadow: 0 0px 15px #CECECE;
+  box-shadow: 0 0px 10px #CECECE;
   border-radius: 1rem;
-  width: 260px;
   font-size:0.8rem;
+  display: flex;
+  flex-direction: column;
 }
 
-
-.activity_card_vertical_img {
-  object-fit: cover;
-  width:260px;
-  height:360px;
-}
-
-.activity_card_title {
-  margin: 1rem;
+.activity_card:hover {
+  background-color: #DEEBFF;
 }
 
 .activity_card_img {
-  height:180px;
   object-fit: cover;
-  width: 260px;
+  width:100%;
+  height: 100%;
+  border-radius: 1rem 1rem 0 0;
+  position: absolute;
 }
+
+.activity_img {
+  position: relative;
+  flex:1;
+}
+
+.activity_card_title {
+  padding:0.8rem;
+}
+
+
 
 
 .all_footer {
@@ -340,12 +414,12 @@ h1 {
 }
 
 .footer {
-  margin-right:210px;
+  width: 35%;
 }
 
 .footer_title {
   font-weight: bold;
-  margin-bottom: 10px;
+  padding-bottom: 10px;
 }
 
 .footer_link {

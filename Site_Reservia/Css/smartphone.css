@@ -1,0 +1,23 @@
+.filter_title_Filtre {
+    width: 100%;
+}
+
+.all_hostings {
+    grid-template-columns: 1fr;
+   
+}
+
+
+.hosting {
+    order:2;
+    grid-template-columns: 1fr;
+    height: 100%;
+}
+
+.popular_hosting_card {
+    width: 100%;
+}
+
+body {
+    max-width: 600px;
+}
