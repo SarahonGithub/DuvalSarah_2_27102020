@@ -13,7 +13,7 @@ body{
   max-width:1200px;
     margin: auto;
     font-family: "Raleway", sans-serif;
-    font-size:0.8em;
+    font-size:0.8rem;
 }
 
 main {
@@ -24,7 +24,7 @@ main {
   display:grid;
   grid-template-columns: auto 1fr auto auto;
   grid-template-areas: "logo . nav inscription";
-  padding: 4rem 5vh 0 5vh;
+  padding: 4rem 2rem 0 2rem;
 }
 
 .logo {
@@ -54,15 +54,22 @@ a {
 .hebergements {
   padding: 35px; 
   color: #0065FC;
-  border-top: 3px solid #0065FC;
+    
 }
 
-.activités {
-  padding-right: 70px;
+@media screen and (min-width: 768px){
+
+  .hebergements {
+    border-top: 3px solid #0065FC;
+  }
+}
+
+.activites {
+  padding-right:70px;
   padding-left:35px;
 }
 
-.activités:hover {
+.activites:hover {
   padding-top: 35px; 
   color: #0065FC;
   border-top: 3px solid #0065FC;
@@ -72,10 +79,11 @@ a {
   grid-area:inscription;
   color: #0065FC;
   font-weight: bold;
+  margin-right: 2rem;
 }
 
 #icon {
-  padding: 15px 12px 17px 18px;
+  padding: 15px 12px 18px 18px;
   background-color:  #F2F2F2;
   width:12px;
   height:10px;
@@ -92,14 +100,14 @@ a {
     padding-left: 20px;
     font-weight: bold;
     color: black;
-    font-size: 1em;
+    font-size: 0.9rem;
 }
 
 input::placeholder {
   color: black;
 }
 
-.button{ 
+.button_rechercher, .button_icon { 
   background: #0065FC;
   height: 43px;
   width: 110px;
@@ -107,6 +115,10 @@ input::placeholder {
   color: white;
   border: none;
   font-size:14px;
+}
+
+.button_icon {
+  display: none;
 }
 
 .search{
@@ -129,7 +141,7 @@ h1 {
   align-items: center;
   border: 2px solid #DEDEDE;
   border-radius: 30px;
-  margin-right:15px;
+  margin-right: 22px;
   height:37px;
   cursor: pointer;
 }
@@ -137,6 +149,7 @@ h1 {
 .search_filters {
   display:inline-flex;
   margin-top:30px;
+  margin-left: 0.7rem;
 }
 
 .filter_icon{
@@ -155,16 +168,15 @@ h1 {
 .filter_title {
   margin-right: 15px;
   margin-left:10px;
-  font-size:13px;
+  font-size: 0.9rem;
   font-weight:bold;
 }
 
 .filter_title_Filtre {
   font-weight:bold;
-  display:flex;
-  align-items:center;
-  margin-right:33px;
-  font-size:13px;
+  margin-top: 13px;
+  margin-right:20px;
+  font-size: 0.9rem;
 }
 
 .filter_category:hover{
@@ -213,7 +225,7 @@ h1 {
 
 .hosting{
   display: grid;
-  grid-template-columns: 3, 1fr;
+  grid-template-columns: repeat(3, 1fr);
   border-radius: 1em;
   column-gap: 1.5rem;
   row-gap: 1.5rem;
@@ -258,16 +270,13 @@ h1 {
 .hosting_card_stars{
   margin-top: 0.4rem;
   margin-left:0.7rem;
-}
-
-.hosting_card_stars{
   font-size:0.6rem;
 }
+
 
 .hosting_show_more{
   font-weight: bold;
 }
-
 
 
 
@@ -310,22 +319,11 @@ h1 {
 
 .description {
   margin-left:0.6em;
-  display: flex;
-  flex-wrap: wrap;
 }
 
-.popular_hosting_name {
-  margin-left: 0.7rem;
-  margin-top: 0.6rem;
-}
 
 .description .hosting_card_stars{
-  align-self: flex-end;
-  margin-bottom:7px;
-}
-
-.description .hosting_night_price {
-  margin-bottom:25px;
+  margin-top: 40px;
 }
 
 
@@ -344,10 +342,10 @@ h1 {
   grid-template-columns: repeat(4,1fr);
   grid-template-rows: 160px 30px 40px 130px;
   column-gap:2rem;
-  grid-template-areas:"Vieux-Port Fort-de-Promègues Parc-National-des-Calanques Notre-Dame-de-la-Garde"
-                      "Vieux-Port Fort-de-Promègues Parc-National-des-Calanques ."
+  grid-template-areas:"Vieux-Port Fort-de-Promegues Parc-National-des-Calanques Notre-Dame-de-la-Garde"
+                      "Vieux-Port Fort-de-Promegues Parc-National-des-Calanques ."
                       "Vieux-Port . Parc-National-des-Calanques Parc-Longchamp"
-                      "Vieux-Port Îles-du-Frioul Parc-National-des-Calanques Parc-Longchamp";
+                      "Vieux-Port Iles-du-Frioul Parc-National-des-Calanques Parc-Longchamp";
 }
 
 #activity_card1 {
@@ -355,7 +353,7 @@ h1 {
 }
 
 #activity_card2 {
-  grid-area: Fort-de-Promègues;
+  grid-area: Fort-de-Promegues;
 }
 
 #activity_card3 {
@@ -367,7 +365,7 @@ h1 {
 }
 
 #activity_card5 {
-  grid-area:Îles-du-Frioul;
+  grid-area:Iles-du-Frioul;
 }
 
 #activity_card6 {
