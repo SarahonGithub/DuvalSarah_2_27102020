@@ -38,10 +38,6 @@ a {
   color: black;
 }
 
-li {
-  list-style: none;
-}
-
 .menu{
   grid-area:nav;
   font-size:0.9rem;
@@ -215,7 +211,7 @@ h1 {
 
 .all_hostings{
   display: grid;
-  column-gap: 2.4em;
+  column-gap: 2.2em;
   grid-template-columns: 2fr 1fr;
 
 }
@@ -224,8 +220,8 @@ h1 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   border-radius: 1em;
-  column-gap: 1.6rem;
-  row-gap: 1.6rem;
+  column-gap: 1.5rem;
+  row-gap: 1.5rem;
   background-color: #F2F2F2;
   margin: 2rem 0;
   padding:2.2rem;
@@ -237,10 +233,10 @@ h1 {
 
 .hosting_card{
   border-radius: 1.25rem;
-  box-shadow: 0 0px 15px #D8D8D8;
+  box-shadow: 0 0px 15px #CECECE;
   padding: 0.3rem;
   background-color: white;
-  font-size: 95%;
+  font-size: 0.7rem;
   width: 200px;
 }
   
@@ -267,7 +263,7 @@ h1 {
 .hosting_card_stars{
   margin-top: 0.4rem;
   margin-left:0.7rem;
-  font-size:80%;
+  font-size:0.6rem;
 }
 
 
@@ -296,10 +292,10 @@ h1 {
 .popular_hosting_card {
   display:flex;
   border-radius: 1.25rem;
-  box-shadow: 0 0px 15px #D8D8D8;
+  box-shadow: 0 0px 15px #CECECE;
   padding: 0.3rem;
   background-color: white;
-  font-size: 95%;
+  font-size: 0.7rem;
 }
 
 .popular_hosting_card:hover {
@@ -309,7 +305,7 @@ h1 {
 
 .popular_hosting_card_img{
   object-fit: cover;
-  width: 40%;
+  width: 110px;
   height:115px;
   border-radius: 1rem 0 0 1rem;
 }
@@ -320,7 +316,7 @@ h1 {
 
 
 .description .hosting_card_stars{
-  margin-top: 25%;
+  margin-top: 40px;
 }
 
 
@@ -370,9 +366,9 @@ h1 {
 }
 
 .activity_card{
-  box-shadow: 0 0px 15px #D8D8D8;
+  box-shadow: 0 0px 10px #CECECE;
   border-radius: 1rem;
-  font-size: 95%;
+  font-size:0.8rem;
   display: flex;
   flex-direction: column;
 }
@@ -395,7 +391,7 @@ h1 {
 }
 
 .activity_card_title {
-  padding: 6%;
+  padding:0.8rem;
 }
 
 
