@@ -109,6 +109,11 @@ h1 {
     align-items: flex-start;
 }
 
+.info_icon {
+    width: 1.8rem;
+    font-size: 0.7rem;
+}
+
 .info_text {
     font-size: 1.2rem;
 }
