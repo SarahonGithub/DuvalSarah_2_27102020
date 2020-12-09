@@ -77,7 +77,7 @@ a {
 }
 
 
-
+/*Header du body*/
 
 
 header {
@@ -186,22 +186,12 @@ h1 {
   background-color: #0065FC;
 }
 
-.blue {
-  color: #0065FC;
-}
-
-.grey {
-  color: #DEDEDE;
-}
-
-
 
 
 .result_info{
   display: flex; 
   align-items: center;
   margin-top:35px;
-
 }
 
 .info_icon{
@@ -217,12 +207,14 @@ h1 {
 }
 
 
+/*Hébergements à Marseille*/
+
+
 .all_hostings{
   display: grid;
   column-gap: 2.4em;
   
 }
-
 
 .hosting{
   display: grid;
@@ -233,7 +225,6 @@ h1 {
   margin: 2rem 0;
   padding:2.2rem;
 }
-
 
 .hosting_title {
   grid-column: 1/ span 3;
@@ -273,6 +264,13 @@ h1 {
   font-size:80%;
 }
 
+.blue {
+  color: #0065FC;
+}
+
+.grey {
+  color: #DEDEDE;
+}
 
 .hosting_show_more{
   font-weight: bold;
@@ -281,59 +279,8 @@ h1 {
   font-size: 1rem;
 }
 
-@media screen and (min-width: 1185px){
-  .all_hostings {
-    grid-template-columns: 2fr 1fr;
-  }
-  .hosting {
-    grid-template-columns: repeat(3, 1fr);
-  }
-  .hosting_card {
-    width: 200px;
-  }
-  .popular_hosting_card_img {
-    width: 40%;
-    height: 115px;
-    border-radius: 1rem 0 0 1rem;
-  }
-  .description .hosting_card_stars {
-    margin-top: 25%;
-  }
-  .description {
-  margin-left:0.6em;
-}
-}
 
-@media screen and (max-width: 1184px){
-
-  .hosting {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .all_hostings {
-    grid-template-columns: 2fr 1fr;
-  }
-  .hosting_title {
-    grid-column: 1/span 2;
-  }
-  .popular_hosting_card {
-    flex-direction: column;
-  }
-  .popular_hosting_card_img {
-    width: 100%;
-    height: 100px;
-    border-radius: 1rem 1rem 0 0;
-  }
-  .search_filters {
-    flex-wrap: wrap;
-  }
-  .filter_title_Filtre {
-    width: 100%;
-  }
-  .filter_category {
-    margin-top: 1rem;
-  }
-}
+/*Hébergements populaires*/
 
 
 .popular_hosting{
@@ -363,15 +310,41 @@ h1 {
 
 .popular_hosting_card:hover {
   background-color: #DEEBFF;
-  
 }
 
 .popular_hosting_card_img{
   object-fit: cover;
-  
 }
 
 
+/*Hébergements sur grand écran*/
+
+
+@media screen and (min-width: 1185px){
+  .all_hostings {
+    grid-template-columns: 2fr 1fr;
+  }
+  .hosting {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .hosting_card {
+    width: 200px;
+  }
+  .popular_hosting_card_img {
+    width: 40%;
+    height: 115px;
+    border-radius: 1rem 0 0 1rem;
+  }
+  .description .hosting_card_stars {
+    margin-top: 25%;
+  }
+  .description {
+  margin-left:0.6em;
+}
+}
+
+
+/*Activités*/
 
 
 
@@ -448,6 +421,7 @@ h1 {
 }
 
 
+/*Footer*/
 
 
 .all_footer {
@@ -472,4 +446,39 @@ li {
 
 .footer_link {
   margin-top:10px;
+}
+
+
+/*Hébergements et filtres en responsive*/
+
+
+@media screen and (max-width: 1184px){
+
+  .hosting {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .all_hostings {
+    grid-template-columns: 2fr 1fr;
+  }
+  .hosting_title {
+    grid-column: 1/span 2;
+  }
+  .popular_hosting_card {
+    flex-direction: column;
+  }
+  .popular_hosting_card_img {
+    width: 100%;
+    height: 100px;
+    border-radius: 1rem 1rem 0 0;
+  }
+  .search_filters {
+    flex-wrap: wrap;
+  }
+  .filter_title_Filtre {
+    width: 100%;
+  }
+  .filter_category {
+    margin-top: 1rem;
+  }
 }
