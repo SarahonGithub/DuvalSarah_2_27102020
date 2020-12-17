@@ -21,7 +21,7 @@ body {
 
 .menu {
     padding-bottom: 30px;
-    font-size: 1rem;
+    font-size: 1.1rem;
     display: flex;
 }
 
@@ -39,7 +39,7 @@ body {
 .logo {
     padding-bottom: 25px ;
     margin-left: 1rem;
-    width: 120px;
+    width: 115px;
 }
 
 
@@ -55,7 +55,7 @@ body {
 }
 
 h1 {
-    margin: 10px 1.9rem 0.5rem 0;
+    margin: 10px 1.5rem 0.5rem 0;
     font-size: 1.5rem;
 }
 
@@ -96,7 +96,11 @@ h1 {
 
 .filter_category {
     height: 47px;
-    margin-right: 15px;
+    margin-right: 0;
+}
+
+#Economique {
+    margin-right: 1rem;
 }
 
 .filter_icon {
@@ -105,7 +109,7 @@ h1 {
 }
 
 .filter_title {
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
 
 .result_info {
@@ -147,10 +151,6 @@ h1 {
     margin-bottom: 0.7rem;
 }
 
-.hosting_name {
-    margin-top: 0.8rem;
-}
-
 .hosting_card {
     width: 98%;
     height: 220px;
@@ -164,6 +164,9 @@ h1 {
     margin-top: 1.5rem;
 }
 
+.hosting_card_stars {
+    margin-top: 0.6rem;
+}
 
 /*Hébergements populaires*/
 
@@ -181,6 +184,14 @@ h1 {
 .popular_hosting_card_img {
     height: 145px;
 }
+
+.description {
+    margin-left: 0.5rem;
+}
+
+.description .hosting_card_stars {
+    margin-top: 3rem;
+  }
 
 
 /*Activités*/
@@ -215,7 +226,7 @@ margin: 2.5rem 0;
 .all_footer {
     flex-direction: column;
     margin-top: 0;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     padding: 0 1.8rem 2.9rem 1.8rem;
 }
 

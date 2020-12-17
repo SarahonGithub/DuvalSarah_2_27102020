@@ -1,3 +1,4 @@
+@import"https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap";
 
 * { 
   margin: 0;
@@ -308,9 +309,14 @@ h1 {
 
 .popular_hosting_card_img{
   object-fit: cover;
-}
-
-
+  width: 40%;
+  height: 115px;
+  border-radius: 1rem 0 0 1rem;
+  }
+  
+.description .hosting_card_stars {
+    margin-top: 2.3rem;
+  }
 /*Hébergements sur grand écran*/
 
 
@@ -321,14 +327,8 @@ h1 {
   .hosting_card {
     width: 200px;
   }
-  .popular_hosting_card_img {
-    width: 40%;
-    height: 115px;
-    border-radius: 1rem 0 0 1rem;
-  }
-  .description .hosting_card_stars {
-    margin-top: 25%;
-  }
+  
+  
   .description {
   margin-left:0.6em;
 }
@@ -446,7 +446,7 @@ li {
 /*Hébergements et filtres en responsive*/
 
 
-@media screen and (max-width: 1184px){
+@media screen and (min-width: 768px) and (max-width: 1184px){
 
   .hosting {
     grid-template-columns: repeat(2, 1fr);
@@ -463,6 +463,11 @@ li {
     height: 100px;
     border-radius: 1rem 1rem 0 0;
   }
+  
+}
+
+  @media screen and (max-width: 1184px){
+
   .search_filters {
     flex-wrap: wrap;
   }
